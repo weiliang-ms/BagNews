@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  BagNews
+//
+//  Created by 微凉 on 16/4/13.
+//  Copyright © 2016年 微凉. All rights reserved.
+//
+
+#ifdef DEBUG // 处于开发阶段
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define MyLog(...)
+#endif
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "String-Header.h"
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import "UITableViewCell+JW.h"
+// RGB颜色
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define ALLCOLOR [UIColor colorWithRed:171/255.0 green:171/255.0 blue:171/255.0 alpha:0.3]
+// 随机色
+#define RandomColor RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define WEAK(ws) __weak __typeof(&*self)ws = self
+#define kTITLEH 30
+

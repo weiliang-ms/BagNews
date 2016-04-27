@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="JWNewsBigImageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="JWNewsBigImageCell" rowHeight="213" id="KGk-i7-Jjw" customClass="JWNewsBigImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFo-ZZ-A6e">
+                        <rect key="frame" x="8" y="47" width="390" height="157"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-Dl-zIG">
+                        <rect key="frame" x="14" y="8" width="384" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="uQt-qc-qnX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ny9-Dl-zIG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="01O-jy-iVQ"/>
+                    <constraint firstItem="qFo-ZZ-A6e" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6BX-Qs-xXR"/>
+                    <constraint firstItem="ny9-Dl-zIG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="T0h-FL-jpd"/>
+                    <constraint firstItem="ny9-Dl-zIG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="dNR-ZC-LSw"/>
+                    <constraint firstItem="qFo-ZZ-A6e" firstAttribute="top" secondItem="ny9-Dl-zIG" secondAttribute="bottom" constant="8" id="jHT-Tf-RiR"/>
+                    <constraint firstItem="qFo-ZZ-A6e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tiA-g6-DfE"/>
+                    <constraint firstItem="qFo-ZZ-A6e" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="vlL-ww-9tu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgMain" destination="qFo-ZZ-A6e" id="Iv4-7M-bzT"/>
+                <outlet property="labelTitle" destination="ny9-Dl-zIG" id="Tui-h6-DYN"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="306.5"/>
+        </tableViewCell>
+    </objects>
+</document>
