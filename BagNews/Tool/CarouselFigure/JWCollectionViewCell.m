@@ -26,7 +26,7 @@
 - (void)setUrl:(NSString *)url
 {
     _url = url;
-    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:_url]];
+    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:_url] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
 }
 - (void)setTitle:(NSString *)title
 {
@@ -45,5 +45,11 @@
     self.picNum.text = _num;
     self.picNum.textColor = [UIColor redColor];
     self.picNum.textAlignment = NSTextAlignmentRight;
+}
+
+- (void)setColor:(UIColor *)color
+{
+    _color = color;
+    self.picNum.textColor = color;
 }
 @end

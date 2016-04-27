@@ -29,7 +29,7 @@
 - (void)setCellWithModel:(JWNewsModel *)model
 {
     
-    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.kpic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder.jpg"]];
+    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.kpic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.labelTitle.text = model.title;
     
 }

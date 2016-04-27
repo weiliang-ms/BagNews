@@ -16,4 +16,5 @@
 
 @property(copy,nonatomic)NSString *num;
 
+@property(retain,nonatomic)UIColor *color;
 @end

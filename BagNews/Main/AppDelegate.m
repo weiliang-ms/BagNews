@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.backgroundColor = [UIColor grayColor];
+    _window.backgroundColor = [UIColor whiteColor];
     // 设置根控制器
     NSString *versionKey = @"CFBundleVersion";
     // 上一次的版本(存储在沙盒中的版本号)

@@ -1,13 +1,13 @@
 //
-//  JWTourCustomModel.m
+//  JWTourLocationsModel.m
 //  BagNews
 //
 //  Created by 微凉 on 16/4/27.
 //  Copyright © 2016年 微凉. All rights reserved.
 //
 
-#import "JWTourCustomModel.h"
+#import "JWTourLocationsModel.h"
 
-@implementation JWTourCustomModel
+@implementation JWTourLocationsModel
 
 @end

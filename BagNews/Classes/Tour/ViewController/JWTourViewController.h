@@ -7,7 +7,15 @@
 //
 
 #import "JWBaseViewController.h"
-
+@class JWCarouselFigureView;
 @interface JWTourViewController : UITableViewController
+@property(copy,nonatomic)NSArray *locations;
+
+@property(copy,nonatomic)NSArray *models;
+
+@property(nonatomic,strong)JWCarouselFigureView *carouseView;
+
+@property (nonatomic, copy) NSString *next_start;
+
 
 @end

@@ -39,24 +39,7 @@
     web.url = link;
     [viewController.navigationController pushViewController:web animated:YES];
 }
-+ (void)getMoreData:(NSString *)url CallBackBlock:(CallBackBlock)callBackBlock
-{
-    __block NSMutableArray *dataArr = [NSMutableArray array];
-    [JWNetTool getWithURL:url Parameter:nil Progress:nil Success:^(id result) {
-        NSDictionary *dic = [result objectForKey:@"data"];
-        NSArray *list = [dic objectForKey:@"list"];
-        for (NSDictionary *temp in list) {
-            JWNewsModel *model = [JWNewsModel modelWithDic:temp];
-            [dataArr addObject:model];
-        }
-        callBackBlock(dataArr);
-    } Failure:^(NSError *error) {
-        
-        NSLog(@"%@",error);
-        
-    } HttpHeader:nil ResponseType:ResponseTypeJSON];
 
-}
 // 下拉刷新
 + (void)getNewsData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView
 {

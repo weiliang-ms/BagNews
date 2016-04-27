@@ -91,7 +91,7 @@
       [self.titleView removeFromSuperview];
       [self.arrowBtn removeFromSuperview];
         _titleView = [[JWTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, kTITLEH+30)];
-        _titleView.backgroundColor = [UIColor grayColor];
+        _titleView.backgroundColor = [UIColor whiteColor];
         _titleView.defaultArr = self.defaultArr;
         [self.view addSubview:_titleView];
     

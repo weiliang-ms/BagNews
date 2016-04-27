@@ -38,6 +38,8 @@
         collectionView.delegate = self;
         collectionView.pagingEnabled = YES;
         collectionView.dataSource = self;
+        collectionView.showsHorizontalScrollIndicator = NO;
+        collectionView.showsVerticalScrollIndicator = NO;
         self.collectionView = collectionView;
         [collectionView registerNib:[UINib nibWithNibName:@"JWCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"JWCollectionViewCell"];
         // 第一个出现的是第二个item也就是数据的第一条数据
@@ -72,21 +74,25 @@
 #pragma - mark 判断是第几个cell 第一个cell赋数组最后一个数据,最后一个cell赋值数组第一个数据
     NSInteger count = self.pics.count;
     if (indexPath.item == 0) {
-        
         cell.url = [self.pics lastObject];
         cell.title = self.titles.count > 0 ? [self.titles lastObject]:nil;
+//        cell.color = self.color ? self.color:[UIColor redColor];
         cell.num = [NSString stringWithFormat:@"%ld/%ld",(unsigned long)self.pics.count,(unsigned long)self.pics.count];
+        
         
     } else if(indexPath.item == count + 1){
         cell.url = [self.pics firstObject];
         cell.title = self.titles.count > 0 ? [self.titles firstObject]:nil;
+//        cell.color = self.color ? self.color:[UIColor redColor];
         cell.num = [NSString stringWithFormat:@"1/%ld",(unsigned long)self.pics.count];
     } else
     {
         cell.url = [self.pics objectAtIndex:indexPath.item - 1];
         cell.title = self.titles.count > 0 ? [self.titles objectAtIndex:indexPath.item - 1]:nil;
+//        cell.color = self.color ? self.color:[UIColor redColor];
         cell.num = [NSString stringWithFormat:@"%ld/%ld",(long)indexPath.item,(unsigned long)self.pics.count];
     }
+    cell.color = self.color ? self.color:[UIColor redColor];
     return cell;
 }
 

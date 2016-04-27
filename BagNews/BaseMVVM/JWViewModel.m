@@ -8,11 +8,18 @@
 
 #import "JWViewModel.h"
 @implementation JWViewModel
-+ (void)getData:(NSString *)url CallBackBlock:(CallBackBlock)callBackBlock
-
++ (void)getMoreData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView DataArr:(NSMutableArray *)dataArr
 {
     
+}
+
++ (void)getNewsData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView
+{
     
+}
+
++ (void)selectedCellTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath ViewController:(UIViewController *)viewController Link:(NSString *)link
+{
     
 }
 

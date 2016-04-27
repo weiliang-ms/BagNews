@@ -15,23 +15,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="413" height="148"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXw-bn-A86">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eXw-bn-A86">
                         <rect key="frame" x="8" y="8" width="151" height="131"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="151" id="QQI-Or-3Ef"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnc-X7-COW">
-                        <rect key="frame" x="186" y="15" width="219" height="38"/>
+                        <rect key="frame" x="172" y="8" width="233" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="38" id="f7s-Xf-XGK"/>
+                            <constraint firstAttribute="height" constant="60" id="f7s-Xf-XGK"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKJ-g5-7SH">
-                        <rect key="frame" x="172" y="69" width="233" height="59"/>
+                        <rect key="frame" x="172" y="83" width="233" height="45"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -48,18 +48,18 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MKJ-g5-7SH" firstAttribute="top" secondItem="bnc-X7-COW" secondAttribute="bottom" constant="16" id="BrV-9e-B9f"/>
-                    <constraint firstItem="DOz-ha-n3o" firstAttribute="top" secondItem="bnc-X7-COW" secondAttribute="bottom" constant="65" id="EOP-Jm-NZL"/>
+                    <constraint firstItem="MKJ-g5-7SH" firstAttribute="top" secondItem="bnc-X7-COW" secondAttribute="bottom" constant="15" id="BrV-9e-B9f"/>
+                    <constraint firstItem="DOz-ha-n3o" firstAttribute="top" secondItem="bnc-X7-COW" secondAttribute="bottom" constant="50" id="EOP-Jm-NZL"/>
                     <constraint firstItem="MKJ-g5-7SH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Fil-HD-yEM"/>
                     <constraint firstItem="bnc-X7-COW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Mdn-Qb-9di"/>
                     <constraint firstItem="eXw-bn-A86" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NKh-uV-h4L"/>
                     <constraint firstAttribute="bottomMargin" secondItem="MKJ-g5-7SH" secondAttribute="bottom" constant="12" id="R55-99-thV"/>
                     <constraint firstItem="eXw-bn-A86" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ro5-dp-zgf"/>
                     <constraint firstItem="MKJ-g5-7SH" firstAttribute="leading" secondItem="eXw-bn-A86" secondAttribute="trailing" constant="13" id="W5b-iv-yLr"/>
-                    <constraint firstItem="bnc-X7-COW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="XFC-Dk-OkF"/>
-                    <constraint firstItem="bnc-X7-COW" firstAttribute="leading" secondItem="eXw-bn-A86" secondAttribute="trailing" constant="27" id="euO-BR-9bQ"/>
+                    <constraint firstItem="bnc-X7-COW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XFC-Dk-OkF"/>
+                    <constraint firstItem="bnc-X7-COW" firstAttribute="leading" secondItem="eXw-bn-A86" secondAttribute="trailing" constant="13" id="euO-BR-9bQ"/>
                     <constraint firstItem="DOz-ha-n3o" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="kAf-bY-eHN"/>
-                    <constraint firstItem="eXw-bn-A86" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="lB6-mP-cFf"/>
+                    <constraint firstItem="eXw-bn-A86" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="-1" id="lB6-mP-cFf"/>
                     <constraint firstItem="DOz-ha-n3o" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="lKI-fB-y80"/>
                 </constraints>
             </tableViewCellContentView>

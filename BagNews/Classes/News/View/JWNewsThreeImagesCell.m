@@ -40,9 +40,9 @@
         
         
         
-        [self.imgLeft sd_setImageWithURL:[NSURL URLWithString:tempOne] placeholderImage:[UIImage imageNamed:@"smallPlayHolder.jpg"]];
-        [self.imgCenter sd_setImageWithURL:[NSURL URLWithString:tempTwo] placeholderImage:[UIImage imageNamed:@"smallPlayHolder.jpg"]];
-        [self.imgRight sd_setImageWithURL:[NSURL URLWithString:tempThree] placeholderImage:[UIImage imageNamed:@"smallPlayHolder.jpg"]];
+        [self.imgLeft sd_setImageWithURL:[NSURL URLWithString:tempOne] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
+        [self.imgCenter sd_setImageWithURL:[NSURL URLWithString:tempTwo] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
+        [self.imgRight sd_setImageWithURL:[NSURL URLWithString:tempThree] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
 
     }
 }

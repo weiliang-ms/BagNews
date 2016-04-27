@@ -19,5 +19,7 @@
 @property(assign,nonatomic)NSInteger secNew;
 /*点击回传*/
 @property(copy,nonatomic)void(^CallBack)(NSInteger index);
+/*页数颜色*/
+@property(retain,nonatomic)UIColor *color;
 
 @end

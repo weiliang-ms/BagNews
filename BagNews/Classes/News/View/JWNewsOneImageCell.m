@@ -30,10 +30,10 @@
 - (void)setCellWithModel:(JWNewsModel *)model
 {
 
-    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.kpic] placeholderImage:nil];
+    [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.kpic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.labelTitle.text = model.title;
     self.labelTitle.font = [UIFont boldSystemFontOfSize:17];
-    self.labelDetail.text = model.intro;
+    self.labelDetail.text = [NSString stringWithFormat:@"       %@",model.intro];
     self.labelDetail.numberOfLines = 2;
     self.labelTitle.numberOfLines = 2;
     self.labelComment.text = [NSString stringWithFormat:@"%ld评论",model.comment];

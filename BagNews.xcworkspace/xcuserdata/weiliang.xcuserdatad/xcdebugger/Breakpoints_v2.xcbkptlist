@@ -19,13 +19,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BagNews/Classes/News/ViewModel/JWNewsViewModel.m"
-            timestampString = "483443226.826853"
+            filePath = "BagNews/Classes/Tour/ViewController/JWTourViewController.m"
+            timestampString = "483460932.410209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "+selectedCellTableView:IndexPath:ViewController:Link:"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-carouseView"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BagNews/Tool/CarouselFigure/JWCarouselFigureView.m"
+            timestampString = "483458728.328815"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-setDataForCell:IndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
