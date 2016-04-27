@@ -20,7 +20,6 @@
 		C012363A1CBE590800AAA15C /* JWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01236391CBE590800AAA15C /* JWBaseViewController.m */; };
 		C012363D1CBE591400AAA15C /* JWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C012363C1CBE591400AAA15C /* JWModel.m */; };
 		C01236401CBE592200AAA15C /* JWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C012363F1CBE592200AAA15C /* JWViewModel.m */; };
-		C01236571CBE596600AAA15C /* JWFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01236561CBE596600AAA15C /* JWFoodViewController.m */; };
 		C012365A1CBE597800AAA15C /* JWMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01236591CBE597800AAA15C /* JWMineViewController.m */; };
 		C012365D1CBE598800AAA15C /* JWNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012365C1CBE598800AAA15C /* JWNewsViewController.m */; };
 		C01236601CBE599B00AAA15C /* JWTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012365F1CBE599B00AAA15C /* JWTourViewController.m */; };
@@ -37,6 +36,7 @@
 		C01236841CBE667400AAA15C /* JWTourDayly.m in Sources */ = {isa = PBXBuildFile; fileRef = C01236831CBE667400AAA15C /* JWTourDayly.m */; };
 		C01236871CBE6B1000AAA15C /* JWTourCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C01236861CBE6B1000AAA15C /* JWTourCustomModel.m */; };
 		C012368D1CBE6E0200AAA15C /* JWNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C012368C1CBE6E0200AAA15C /* JWNetTool.m */; };
+		C01C1C7F1CD0C48800F456A6 /* JWFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */; };
 		C0444AF91CC9F42A0003107F /* DefaultURLS.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0444AF81CC9F42A0003107F /* DefaultURLS.plist */; };
 		C0444AFB1CC9F61E0003107F /* OtherURLS.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0444AFA1CC9F61E0003107F /* OtherURLS.plist */; };
 		C0444AFF1CC9FAD40003107F /* FMDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0444AFE1CC9FAD40003107F /* FMDBTool.m */; };
@@ -88,8 +88,6 @@
 		C012363C1CBE591400AAA15C /* JWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWModel.m; sourceTree = "<group>"; };
 		C012363E1CBE592200AAA15C /* JWViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWViewModel.h; sourceTree = "<group>"; };
 		C012363F1CBE592200AAA15C /* JWViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWViewModel.m; sourceTree = "<group>"; };
-		C01236551CBE596600AAA15C /* JWFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFoodViewController.h; path = ../JWFoodViewController.h; sourceTree = "<group>"; };
-		C01236561CBE596600AAA15C /* JWFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFoodViewController.m; path = ../JWFoodViewController.m; sourceTree = "<group>"; };
 		C01236581CBE597800AAA15C /* JWMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWMineViewController.h; sourceTree = "<group>"; };
 		C01236591CBE597800AAA15C /* JWMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWMineViewController.m; sourceTree = "<group>"; };
 		C012365B1CBE598800AAA15C /* JWNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWNewsViewController.h; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		C01236861CBE6B1000AAA15C /* JWTourCustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourCustomModel.m; sourceTree = "<group>"; };
 		C012368B1CBE6E0200AAA15C /* JWNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWNetTool.h; sourceTree = "<group>"; };
 		C012368C1CBE6E0200AAA15C /* JWNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWNetTool.m; sourceTree = "<group>"; };
+		C01C1C7D1CD0C48800F456A6 /* JWFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFoodViewController.h; sourceTree = "<group>"; };
+		C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFoodViewController.m; sourceTree = "<group>"; };
 		C0444AF81CC9F42A0003107F /* DefaultURLS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultURLS.plist; sourceTree = "<group>"; };
 		C0444AFA1CC9F61E0003107F /* OtherURLS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OtherURLS.plist; sourceTree = "<group>"; };
 		C0444AFD1CC9FAD40003107F /* FMDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTool.h; sourceTree = "<group>"; };
@@ -346,8 +346,8 @@
 		C01236441CBE593400AAA15C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C01236551CBE596600AAA15C /* JWFoodViewController.h */,
-				C01236561CBE596600AAA15C /* JWFoodViewController.m */,
+				C01C1C7D1CD0C48800F456A6 /* JWFoodViewController.h */,
+				C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -733,9 +733,9 @@
 				C01236871CBE6B1000AAA15C /* JWTourCustomModel.m in Sources */,
 				C0D8C6751CCCEB9100189E4B /* JWNewsThreeImagesCell.m in Sources */,
 				C012365D1CBE598800AAA15C /* JWNewsViewController.m in Sources */,
-				C01236571CBE596600AAA15C /* JWFoodViewController.m in Sources */,
 				C0F945C21CCB463200D59FA9 /* JWNewsTableViewController.m in Sources */,
 				C011C5A71CCE8475007B1BDA /* JWWebViewController.m in Sources */,
+				C01C1C7F1CD0C48800F456A6 /* JWFoodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
