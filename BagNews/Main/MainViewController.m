@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "JWNewsViewController.h"
 #import "JWTourViewController.h"
-#import "JWFoodViewController.h"
+#import "JWVideoViewController.h"
 #import "JWMineViewController.h"
 #import "JWNavigationController.h"
 @interface MainViewController ()
@@ -42,7 +42,7 @@
     // 添加子控制器
     [self addChildVc:[[JWNewsViewController alloc] init] title:@"新闻" image:@"xinwenputong.png" selectedImage:@"xinwenxuanzhong.png"];
     [self addChildVc:[[JWTourViewController alloc] init] title:@"旅行" image:@"iconfont-erciyuan-2" selectedImage:@"iconfont-erciyuan-2"];
-    [self addChildVc:[[JWFoodViewController alloc] init] title:@"视频" image:@"iconfont-dibushiting" selectedImage:@"iconfont-dibushiting-2"];
+    [self addChildVc:[[JWVideoViewController alloc] init] title:@"视频" image:@"iconfont-dibushiting" selectedImage:@"iconfont-dibushiting-2"];
     [self addChildVc:[[JWMineViewController alloc] init] title:@"我的" image:@"iconfont-duanzi" selectedImage:@"iconfont-duanzi-2"];
   
 }

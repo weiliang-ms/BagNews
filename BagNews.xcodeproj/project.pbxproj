@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A85A4B448584C44464A7C55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4ECB0B19F15FAF55646927 /* libPods.a */; };
+		C00CB4FB1CD3CA1500C70593 /* JWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00CB4FA1CD3CA1500C70593 /* JWVideoViewController.m */; };
 		C011C59E1CCE6993007B1BDA /* JWCarouselFigureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C011C59A1CCE6993007B1BDA /* JWCarouselFigureView.m */; };
 		C011C59F1CCE6993007B1BDA /* JWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C011C59C1CCE6993007B1BDA /* JWCollectionViewCell.m */; };
 		C011C5A01CCE6993007B1BDA /* JWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C011C59D1CCE6993007B1BDA /* JWCollectionViewCell.xib */; };
@@ -32,7 +33,6 @@
 		C012367A1CBE607D00AAA15C /* xinwenputong.png in Resources */ = {isa = PBXBuildFile; fileRef = C01236781CBE607D00AAA15C /* xinwenputong.png */; };
 		C012367B1CBE607D00AAA15C /* xinwenxuanzhong.png in Resources */ = {isa = PBXBuildFile; fileRef = C01236791CBE607D00AAA15C /* xinwenxuanzhong.png */; };
 		C012368D1CBE6E0200AAA15C /* JWNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C012368C1CBE6E0200AAA15C /* JWNetTool.m */; };
-		C01C1C7F1CD0C48800F456A6 /* JWFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */; };
 		C01C1C811CD0DD6D00F456A6 /* smallPlayHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = C01C1C801CD0DD6D00F456A6 /* smallPlayHolder.png */; };
 		C01C1C851CD0E91100F456A6 /* JWTourBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C1C831CD0E91100F456A6 /* JWTourBigCell.m */; };
 		C01C1C861CD0E91100F456A6 /* JWTourBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01C1C841CD0E91100F456A6 /* JWTourBigCell.xib */; };
@@ -81,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		90567151FE1CA361955448F7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C00CB4F91CD3CA1500C70593 /* JWVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWVideoViewController.h; sourceTree = "<group>"; };
+		C00CB4FA1CD3CA1500C70593 /* JWVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWVideoViewController.m; sourceTree = "<group>"; };
 		C011C5991CCE6993007B1BDA /* JWCarouselFigureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCarouselFigureView.h; sourceTree = "<group>"; };
 		C011C59A1CCE6993007B1BDA /* JWCarouselFigureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCarouselFigureView.m; sourceTree = "<group>"; };
 		C011C59B1CCE6993007B1BDA /* JWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCollectionViewCell.h; sourceTree = "<group>"; };
@@ -125,8 +127,6 @@
 		C01236791CBE607D00AAA15C /* xinwenxuanzhong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xinwenxuanzhong.png; sourceTree = "<group>"; };
 		C012368B1CBE6E0200AAA15C /* JWNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWNetTool.h; sourceTree = "<group>"; };
 		C012368C1CBE6E0200AAA15C /* JWNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWNetTool.m; sourceTree = "<group>"; };
-		C01C1C7D1CD0C48800F456A6 /* JWFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFoodViewController.h; sourceTree = "<group>"; };
-		C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFoodViewController.m; sourceTree = "<group>"; };
 		C01C1C801CD0DD6D00F456A6 /* smallPlayHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallPlayHolder.png; sourceTree = "<group>"; };
 		C01C1C821CD0E91100F456A6 /* JWTourBigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourBigCell.h; sourceTree = "<group>"; };
 		C01C1C831CD0E91100F456A6 /* JWTourBigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourBigCell.m; sourceTree = "<group>"; };
@@ -234,6 +234,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C00CB4F41CD3C9F000C70593 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C00CB4F51CD3C9F000C70593 /* Model */,
+				C00CB4F61CD3C9F000C70593 /* View */,
+				C00CB4F71CD3C9F000C70593 /* ViewController */,
+				C00CB4F81CD3C9F000C70593 /* ViewModel */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		C00CB4F51CD3C9F000C70593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C00CB4F61CD3C9F000C70593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C00CB4F71CD3C9F000C70593 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C00CB4F91CD3CA1500C70593 /* JWVideoViewController.h */,
+				C00CB4FA1CD3CA1500C70593 /* JWVideoViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C00CB4F81CD3C9F000C70593 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C01236101CBE57E900AAA15C = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +338,7 @@
 		C01236341CBE585600AAA15C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C01236411CBE593400AAA15C /* Food */,
+				C00CB4F41CD3C9F000C70593 /* Video */,
 				C01236461CBE593400AAA15C /* Mine */,
 				C012364B1CBE593400AAA15C /* News */,
 				C01236501CBE593400AAA15C /* Tour */,
@@ -358,47 +399,6 @@
 				C0D8C6541CCC0CEE00189E4B /* JWNewsDB.m */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		C01236411CBE593400AAA15C /* Food */ = {
-			isa = PBXGroup;
-			children = (
-				C01236421CBE593400AAA15C /* Model */,
-				C01236431CBE593400AAA15C /* View */,
-				C01236441CBE593400AAA15C /* ViewController */,
-				C01236451CBE593400AAA15C /* ViewModel */,
-			);
-			path = Food;
-			sourceTree = "<group>";
-		};
-		C01236421CBE593400AAA15C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C01236431CBE593400AAA15C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C01236441CBE593400AAA15C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C01C1C7D1CD0C48800F456A6 /* JWFoodViewController.h */,
-				C01C1C7E1CD0C48800F456A6 /* JWFoodViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		C01236451CBE593400AAA15C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C01236461CBE593400AAA15C /* Mine */ = {
@@ -779,6 +779,7 @@
 				C01236771CBE5BDE00AAA15C /* JWRootViewController.m in Sources */,
 				C0444B2C1CCB25550003107F /* JWTitleView.m in Sources */,
 				C011C59E1CCE6993007B1BDA /* JWCarouselFigureView.m in Sources */,
+				C00CB4FB1CD3CA1500C70593 /* JWVideoViewController.m in Sources */,
 				C0D8C66B1CCCEB3E00189E4B /* JWNewsOneImageCell.m in Sources */,
 				C01C1C891CD0EC4900F456A6 /* JWTourLocationsModel.m in Sources */,
 				C012368D1CBE6E0200AAA15C /* JWNetTool.m in Sources */,
@@ -813,7 +814,6 @@
 				C012365D1CBE598800AAA15C /* JWNewsViewController.m in Sources */,
 				C0F945C21CCB463200D59FA9 /* JWNewsTableViewController.m in Sources */,
 				C011C5A71CCE8475007B1BDA /* JWWebViewController.m in Sources */,
-				C01C1C7F1CD0C48800F456A6 /* JWFoodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

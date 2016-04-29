@@ -1,18 +1,18 @@
 //
-//  JWFoodViewController.m
+//  JWVideoViewController.m
 //  BagNews
 //
-//  Created by 微凉 on 16/4/13.
+//  Created by 微凉 on 16/4/30.
 //  Copyright © 2016年 微凉. All rights reserved.
 //
 
-#import "JWFoodViewController.h"
+#import "JWVideoViewController.h"
 
-@interface JWFoodViewController ()
+@interface JWVideoViewController ()
 
 @end
 
-@implementation JWFoodViewController
+@implementation JWVideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
