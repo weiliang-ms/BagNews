@@ -78,7 +78,7 @@
         self.contentOffset = CGPointMake((index - 2) * ITEMW , 0);
     }
 #pragma - mark 点击发送通知主VC偏移主Scr
-    NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%ld",index] forKey:@"index"];
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%ld",(long)index] forKey:@"index"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"mainScrContentOffset" object:nil userInfo:dic];
 }
 /*重写setter方法 实现上随下动*/

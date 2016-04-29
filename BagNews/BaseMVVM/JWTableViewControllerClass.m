@@ -12,6 +12,8 @@
 #import "JWNewsThreeImagesCell.h"
 @interface JWTableViewControllerClass ()
 
+@property(nonatomic,retain)UIButton *btn;
+
 @end
 
 @implementation JWTableViewControllerClass
@@ -23,7 +25,24 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"JWNewsThreeImagesCell" bundle:nil] forCellReuseIdentifier:@"JWNewsThreeImagesCell"];
 
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 50, SCREENHEIGHT - 200, 30, 30)];
+    [self.btn setBackgroundImage:[UIImage imageNamed:@"iconfont-xiangshang"] forState:0];
+    [self.btn setBackgroundImage:[UIImage imageNamed:@"iconfont-xiangshang"] forState:1<<0];
+    [self.btn addTarget:self action:@selector(returnTop) forControlEvents:1<<6];
+    self.btn.hidden = YES;
+    [self.tableView.superview addSubview:self.btn];
 
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+   
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -32,15 +51,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 0;
 }
+// 返回最上
+- (void)returnTop
+{
+    self.tableView.contentOffset = CGPointMake(0, 0);
+    self.btn.hidden = YES;
+}
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y >= SCREENHEIGHT) {
+        self.btn.hidden = NO;
+    }
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

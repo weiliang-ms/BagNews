@@ -18,7 +18,7 @@
       ResponseType:(ResponseType)responseType
 {
     // 缓存的文件夹
-    NSString *path = [NSString stringWithFormat:@"%ld.plist", [url hash]];
+    NSString *path = [NSString stringWithFormat:@"%ld.plist", (unsigned long)[url hash]];
     NSString *path_doc = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     // 反归档
     id result = [NSKeyedUnarchiver unarchiveObjectWithFile:[path_doc stringByAppendingPathComponent:path]];
@@ -65,7 +65,7 @@
             dispatch_async(queue, ^{
                 
                 //  成功之后异步缓存数据
-                NSString *path = [NSString stringWithFormat:@"%ld.plist", [url hash]];
+                NSString *path = [NSString stringWithFormat:@"%ld.plist", (unsigned long)[url hash]];
                 // 存储的沙盒路径
                 NSString *path_doc = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
                 // 归档

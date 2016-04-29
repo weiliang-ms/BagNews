@@ -27,6 +27,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
     [self.view addSubview:web];
     [web loadRequest:request];
+    web.scalesPageToFit = YES;
 
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView

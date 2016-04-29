@@ -36,7 +36,7 @@
     self.labelDetail.text = [NSString stringWithFormat:@"       %@",model.intro];
     self.labelDetail.numberOfLines = 2;
     self.labelTitle.numberOfLines = 2;
-    self.labelComment.text = [NSString stringWithFormat:@"%ld评论",model.comment];
+    self.labelComment.text = [NSString stringWithFormat:@"%ld评论",(long)model.comment];
     self.labelComment.textAlignment = 2;
     
 }

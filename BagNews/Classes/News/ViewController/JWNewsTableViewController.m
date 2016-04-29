@@ -45,8 +45,12 @@
             NSMutableArray *titleArr = [NSMutableArray array];
             for (int i = 0; i < 5; i++) {
                 JWNewsModel *model = [self.dataArr objectAtIndex:i];
-                [temp addObject:model.kpic];
-                [titleArr addObject:model.title];
+                if (model.kpic) {
+                    [temp addObject:model.kpic];
+                }
+                if (model.title) {
+                    [titleArr addObject:model.title];
+                }
             }
             _carouseView.pics = temp;
             _carouseView.titles = titleArr;

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longing.png" translatesAutoresizingMaskIntoConstraints="NO" id="ieN-Kh-DNd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.69454936950000001" blue="0.30217443150000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ieN-Kh-DNd" secondAttribute="trailing" constant="-20" id="anc-Gs-WNV"/>
+                            <constraint firstItem="ieN-Kh-DNd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="emG-fv-QZL"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ieN-Kh-DNd" secondAttribute="bottom" id="lQ3-gk-mz0"/>
+                            <constraint firstItem="ieN-Kh-DNd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="oTD-3U-4p8"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="234"/>
+            <point key="canvasLocation" x="312" y="223"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="longing.png" width="640" height="1136"/>
+    </resources>
 </document>

@@ -38,6 +38,19 @@
 		C01C1C861CD0E91100F456A6 /* JWTourBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01C1C841CD0E91100F456A6 /* JWTourBigCell.xib */; };
 		C01C1C891CD0EC4900F456A6 /* JWTourLocationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C1C881CD0EC4900F456A6 /* JWTourLocationsModel.m */; };
 		C01C1C8C1CD0ECB600F456A6 /* JWTourCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C1C8B1CD0ECB600F456A6 /* JWTourCustomModel.m */; };
+		C0311F3F1CD1F2F500F2BAA4 /* xiangshangsuoyi.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311F3E1CD1F2F500F2BAA4 /* xiangshangsuoyi.png */; };
+		C0311F411CD1F74300F2BAA4 /* iconfont-xiangshang.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311F401CD1F74300F2BAA4 /* iconfont-xiangshang.png */; };
+		C0311F431CD1FBE200F2BAA4 /* longing.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311F421CD1FBE200F2BAA4 /* longing.png */; };
+		C0311F461CD2096800F2BAA4 /* JWTourNearMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F451CD2096800F2BAA4 /* JWTourNearMainViewController.m */; };
+		C0311F481CD20A9100F2BAA4 /* dingwei.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311F471CD20A9100F2BAA4 /* dingwei.png */; };
+		C0311F4B1CD20BAA00F2BAA4 /* JWTourNearTop.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F4A1CD20BAA00F2BAA4 /* JWTourNearTop.m */; };
+		C0311F581CD22C5C00F2BAA4 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F551CD22C5C00F2BAA4 /* NSArray+Log.m */; };
+		C0311F5B1CD23D6E00F2BAA4 /* JWTourNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F5A1CD23D6E00F2BAA4 /* JWTourNearViewController.m */; };
+		C0311F5F1CD25DC500F2BAA4 /* JWTourNearVM.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F5E1CD25DC500F2BAA4 /* JWTourNearVM.m */; };
+		C0311F621CD265DF00F2BAA4 /* JWTourNearModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F611CD265DF00F2BAA4 /* JWTourNearModel.m */; };
+		C0311F6B1CD26A2400F2BAA4 /* JWTourNearTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0311F691CD26A2400F2BAA4 /* JWTourNearTableViewCell.m */; };
+		C0311F6C1CD26A2400F2BAA4 /* JWTourNearTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0311F6A1CD26A2400F2BAA4 /* JWTourNearTableViewCell.xib */; };
+		C0311F6E1CD27BA500F2BAA4 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = C0311F6D1CD27BA500F2BAA4 /* fanhui.png */; };
 		C0444AF91CC9F42A0003107F /* DefaultURLS.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0444AF81CC9F42A0003107F /* DefaultURLS.plist */; };
 		C0444AFB1CC9F61E0003107F /* OtherURLS.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0444AFA1CC9F61E0003107F /* OtherURLS.plist */; };
 		C0444AFF1CC9FAD40003107F /* FMDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0444AFE1CC9FAD40003107F /* FMDBTool.m */; };
@@ -122,6 +135,27 @@
 		C01C1C881CD0EC4900F456A6 /* JWTourLocationsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourLocationsModel.m; sourceTree = "<group>"; };
 		C01C1C8A1CD0ECB600F456A6 /* JWTourCustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourCustomModel.h; sourceTree = "<group>"; };
 		C01C1C8B1CD0ECB600F456A6 /* JWTourCustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourCustomModel.m; sourceTree = "<group>"; };
+		C0311F3E1CD1F2F500F2BAA4 /* xiangshangsuoyi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiangshangsuoyi.png; sourceTree = "<group>"; };
+		C0311F401CD1F74300F2BAA4 /* iconfont-xiangshang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-xiangshang.png"; sourceTree = "<group>"; };
+		C0311F421CD1FBE200F2BAA4 /* longing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longing.png; sourceTree = "<group>"; };
+		C0311F441CD2096800F2BAA4 /* JWTourNearMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearMainViewController.h; sourceTree = "<group>"; };
+		C0311F451CD2096800F2BAA4 /* JWTourNearMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearMainViewController.m; sourceTree = "<group>"; };
+		C0311F471CD20A9100F2BAA4 /* dingwei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingwei.png; sourceTree = "<group>"; };
+		C0311F491CD20BAA00F2BAA4 /* JWTourNearTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearTop.h; sourceTree = "<group>"; };
+		C0311F4A1CD20BAA00F2BAA4 /* JWTourNearTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearTop.m; sourceTree = "<group>"; };
+		C0311F541CD22C5C00F2BAA4 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		C0311F551CD22C5C00F2BAA4 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		C0311F591CD23D6D00F2BAA4 /* JWTourNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearViewController.h; sourceTree = "<group>"; };
+		C0311F5A1CD23D6E00F2BAA4 /* JWTourNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearViewController.m; sourceTree = "<group>"; };
+		C0311F5C1CD25A6800F2BAA4 /* TourNearUrlsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TourNearUrlsHeader.h; sourceTree = "<group>"; };
+		C0311F5D1CD25DC500F2BAA4 /* JWTourNearVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearVM.h; sourceTree = "<group>"; };
+		C0311F5E1CD25DC500F2BAA4 /* JWTourNearVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearVM.m; sourceTree = "<group>"; };
+		C0311F601CD265DF00F2BAA4 /* JWTourNearModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearModel.h; sourceTree = "<group>"; };
+		C0311F611CD265DF00F2BAA4 /* JWTourNearModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearModel.m; sourceTree = "<group>"; };
+		C0311F681CD26A2400F2BAA4 /* JWTourNearTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourNearTableViewCell.h; sourceTree = "<group>"; };
+		C0311F691CD26A2400F2BAA4 /* JWTourNearTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourNearTableViewCell.m; sourceTree = "<group>"; };
+		C0311F6A1CD26A2400F2BAA4 /* JWTourNearTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWTourNearTableViewCell.xib; sourceTree = "<group>"; };
+		C0311F6D1CD27BA500F2BAA4 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
 		C0444AF81CC9F42A0003107F /* DefaultURLS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultURLS.plist; sourceTree = "<group>"; };
 		C0444AFA1CC9F61E0003107F /* OtherURLS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OtherURLS.plist; sourceTree = "<group>"; };
 		C0444AFD1CC9FAD40003107F /* FMDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTool.h; sourceTree = "<group>"; };
@@ -294,6 +328,11 @@
 		C01236361CBE585600AAA15C /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				C0311F6D1CD27BA500F2BAA4 /* fanhui.png */,
+				C0311F471CD20A9100F2BAA4 /* dingwei.png */,
+				C0311F421CD1FBE200F2BAA4 /* longing.png */,
+				C0311F401CD1F74300F2BAA4 /* iconfont-xiangshang.png */,
+				C0311F3E1CD1F2F500F2BAA4 /* xiangshangsuoyi.png */,
 				C01C1C801CD0DD6D00F456A6 /* smallPlayHolder.png */,
 				C0D8C6561CCCA98C00189E4B /* delete.png */,
 				C05603641CCBD55500413A4B /* xiangshang.png */,
@@ -307,6 +346,7 @@
 		C01236371CBE585600AAA15C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C0311F4F1CD22C5C00F2BAA4 /* Map+NSLog */,
 				C0444AFC1CC9FAD40003107F /* FMDB封装 */,
 				C09060831CBE74140024211E /* CarouselFigure */,
 				C012368B1CBE6E0200AAA15C /* JWNetTool.h */,
@@ -488,6 +528,9 @@
 				C01C1C881CD0EC4900F456A6 /* JWTourLocationsModel.m */,
 				C01C1C8A1CD0ECB600F456A6 /* JWTourCustomModel.h */,
 				C01C1C8B1CD0ECB600F456A6 /* JWTourCustomModel.m */,
+				C0311F5C1CD25A6800F2BAA4 /* TourNearUrlsHeader.h */,
+				C0311F601CD265DF00F2BAA4 /* JWTourNearModel.h */,
+				C0311F611CD265DF00F2BAA4 /* JWTourNearModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -498,6 +541,11 @@
 				C01C1C821CD0E91100F456A6 /* JWTourBigCell.h */,
 				C01C1C831CD0E91100F456A6 /* JWTourBigCell.m */,
 				C01C1C841CD0E91100F456A6 /* JWTourBigCell.xib */,
+				C0311F491CD20BAA00F2BAA4 /* JWTourNearTop.h */,
+				C0311F4A1CD20BAA00F2BAA4 /* JWTourNearTop.m */,
+				C0311F681CD26A2400F2BAA4 /* JWTourNearTableViewCell.h */,
+				C0311F691CD26A2400F2BAA4 /* JWTourNearTableViewCell.m */,
+				C0311F6A1CD26A2400F2BAA4 /* JWTourNearTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +555,10 @@
 			children = (
 				C012365E1CBE599B00AAA15C /* JWTourViewController.h */,
 				C012365F1CBE599B00AAA15C /* JWTourViewController.m */,
+				C0311F441CD2096800F2BAA4 /* JWTourNearMainViewController.h */,
+				C0311F451CD2096800F2BAA4 /* JWTourNearMainViewController.m */,
+				C0311F591CD23D6D00F2BAA4 /* JWTourNearViewController.h */,
+				C0311F5A1CD23D6E00F2BAA4 /* JWTourNearViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -516,6 +568,8 @@
 			children = (
 				C09060801CBE70950024211E /* JWTourViewModel.h */,
 				C09060811CBE70950024211E /* JWTourViewModel.m */,
+				C0311F5D1CD25DC500F2BAA4 /* JWTourNearVM.h */,
+				C0311F5E1CD25DC500F2BAA4 /* JWTourNearVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -531,6 +585,15 @@
 				C011C5A31CCE7B0D007B1BDA /* UITableViewCell+JW.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		C0311F4F1CD22C5C00F2BAA4 /* Map+NSLog */ = {
+			isa = PBXGroup;
+			children = (
+				C0311F541CD22C5C00F2BAA4 /* NSArray+Log.h */,
+				C0311F551CD22C5C00F2BAA4 /* NSArray+Log.m */,
+			);
+			path = "Map+NSLog";
 			sourceTree = "<group>";
 		};
 		C0444AFC1CC9FAD40003107F /* FMDB封装 */ = {
@@ -624,20 +687,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0311F6C1CD26A2400F2BAA4 /* JWTourNearTableViewCell.xib in Resources */,
 				C012362C1CBE57E900AAA15C /* LaunchScreen.storyboard in Resources */,
 				C011C5A01CCE6993007B1BDA /* JWCollectionViewCell.xib in Resources */,
 				C0444AFB1CC9F61E0003107F /* OtherURLS.plist in Resources */,
 				C012367A1CBE607D00AAA15C /* xinwenputong.png in Resources */,
 				C05603651CCBD55500413A4B /* xiangshang.png in Resources */,
+				C0311F3F1CD1F2F500F2BAA4 /* xiangshangsuoyi.png in Resources */,
 				C0D8C6761CCCEB9100189E4B /* JWNewsThreeImagesCell.xib in Resources */,
 				C0D8C6571CCCA98C00189E4B /* delete.png in Resources */,
+				C0311F431CD1FBE200F2BAA4 /* longing.png in Resources */,
 				C01C1C811CD0DD6D00F456A6 /* smallPlayHolder.png in Resources */,
 				C0D8C6711CCCEB6500189E4B /* JWNewsBigImageCell.xib in Resources */,
 				C0D8C66C1CCCEB3E00189E4B /* JWNewsOneImageCell.xib in Resources */,
+				C0311F411CD1F74300F2BAA4 /* iconfont-xiangshang.png in Resources */,
 				C012367B1CBE607D00AAA15C /* xinwenxuanzhong.png in Resources */,
 				C0444AF91CC9F42A0003107F /* DefaultURLS.plist in Resources */,
+				C0311F6E1CD27BA500F2BAA4 /* fanhui.png in Resources */,
 				C01236291CBE57E900AAA15C /* Assets.xcassets in Resources */,
 				C0F945CA1CCB53A000D59FA9 /* xiangxia.png in Resources */,
+				C0311F481CD20A9100F2BAA4 /* dingwei.png in Resources */,
 				C01236271CBE57E900AAA15C /* Main.storyboard in Resources */,
 				C01C1C861CD0E91100F456A6 /* JWTourBigCell.xib in Resources */,
 			);
@@ -698,8 +767,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0311F621CD265DF00F2BAA4 /* JWTourNearModel.m in Sources */,
+				C0311F581CD22C5C00F2BAA4 /* NSArray+Log.m in Sources */,
+				C0311F5B1CD23D6E00F2BAA4 /* JWTourNearViewController.m in Sources */,
 				C012366B1CBE5A6900AAA15C /* MainViewController.m in Sources */,
 				C01236601CBE599B00AAA15C /* JWTourViewController.m in Sources */,
+				C0311F5F1CD25DC500F2BAA4 /* JWTourNearVM.m in Sources */,
 				C0F945C81CCB52A600D59FA9 /* JWArrowBtn.m in Sources */,
 				C0444B061CCA10E20003107F /* JWItem.m in Sources */,
 				C012365A1CBE597800AAA15C /* JWMineViewController.m in Sources */,
@@ -716,6 +789,7 @@
 				C012363A1CBE590800AAA15C /* JWBaseViewController.m in Sources */,
 				C0D8C6551CCC0CEE00189E4B /* JWNewsDB.m in Sources */,
 				C012366A1CBE5A6900AAA15C /* JWNavigationController.m in Sources */,
+				C0311F4B1CD20BAA00F2BAA4 /* JWTourNearTop.m in Sources */,
 				C012363D1CBE591400AAA15C /* JWModel.m in Sources */,
 				C0D8C6611CCCE15600189E4B /* JWTableViewControllerClass.m in Sources */,
 				C0F945CD1CCB5ACF00D59FA9 /* JWListView.m in Sources */,
@@ -734,6 +808,8 @@
 				C0D8C6671CCCE3A500189E4B /* JWNewsViewModel.m in Sources */,
 				C01236721CBE5AE600AAA15C /* UIBarButtonItem+Extension.m in Sources */,
 				C0D8C6751CCCEB9100189E4B /* JWNewsThreeImagesCell.m in Sources */,
+				C0311F461CD2096800F2BAA4 /* JWTourNearMainViewController.m in Sources */,
+				C0311F6B1CD26A2400F2BAA4 /* JWTourNearTableViewCell.m in Sources */,
 				C012365D1CBE598800AAA15C /* JWNewsViewController.m in Sources */,
 				C0F945C21CCB463200D59FA9 /* JWNewsTableViewController.m in Sources */,
 				C011C5A71CCE8475007B1BDA /* JWWebViewController.m in Sources */,
@@ -854,6 +930,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = $SRCROOT/BagNews/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = BagNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xcode-----test.BagNews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -867,6 +944,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = $SRCROOT/BagNews/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = BagNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xcode-----test.BagNews";
 				PRODUCT_NAME = "$(TARGET_NAME)";

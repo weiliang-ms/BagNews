@@ -166,7 +166,7 @@
 {
     NSInteger index = scrollView.contentOffset.x / SCREENWIDTH;
     self.titleView.currentItem = index ;
-    NSLog(@"%ld",index);
+
     if (index >= 2) {
         self.titleView.contentOffset = CGPointMake((index - 2) * (SCREENWIDTH)/ 5, 0);
     }

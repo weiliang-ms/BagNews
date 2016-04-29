@@ -14,27 +14,10 @@
 #import "JWNewsThreeImagesCell.h"
 #import "JWNewsTableViewController.h"
 @implementation JWNewsViewModel
-//+ (void)getData:(NSString *)url CallBackBlock:(CallBackBlock)callBackBlock
-//{
-//    __block NSMutableArray *dataArr = [NSMutableArray array];
-//    [JWNetTool getWithURL:url Parameter:nil Progress:nil Success:^(id result) {
-//        NSDictionary *dic = [result objectForKey:@"data"];
-//        NSArray *list = [dic objectForKey:@"list"];
-//        for (NSDictionary *temp in list) {
-//            JWNewsModel *model = [JWNewsModel modelWithDic:temp];
-//            [dataArr addObject:model];
-//        }
-//        callBackBlock(dataArr);
-//    } Failure:^(NSError *error) {
-//        NSLog(@"%@",error);
-//        
-//    } HttpHeader:nil ResponseType:ResponseTypeJSON];
-//}
+
 + (void)selectedCellTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath ViewController:(UIViewController *)viewController Link:(NSString *)link
 {
-//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    [cell changeCellTextColor];
-//    [tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForItem:indexPath.row inSection:0]]withRowAnimation:UITableViewRowAnimationNone];
+    [super selectedCellTableView:tableView IndexPath:indexPath ViewController:viewController Link:link];
     JWWebViewController *web = [[JWWebViewController alloc] init];
     web.url = link;
     [viewController.navigationController pushViewController:web animated:YES];
@@ -43,6 +26,7 @@
 // 下拉刷新
 + (void)getNewsData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView
 {
+    [super getNewsData:url ViewController:viewController TableView:tableView];
     JWNewsTableViewController *vc = (JWNewsTableViewController *)viewController;
     __block NSMutableArray *dataArr = [NSMutableArray array];
     [JWNetTool getWithURL:url Parameter:nil Progress:nil Success:^(id result) {
@@ -74,6 +58,7 @@
 #pragma mark - 基于MJ上拉加载
 + (void)getMoreData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView DataArr:(NSMutableArray *)dataArr
 {
+    [super getMoreData:url ViewController:viewController TableView:tableView DataArr:dataArr];
     static NSInteger index = 1;
     index++;
      JWNewsTableViewController *vc = (JWNewsTableViewController *)viewController;

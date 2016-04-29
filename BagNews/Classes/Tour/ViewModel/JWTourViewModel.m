@@ -14,6 +14,7 @@
 @implementation JWTourViewModel
 + (void)getNewsData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView
 {
+    [super getNewsData:url ViewController:viewController TableView:tableView];
     JWTourViewController *tour = (JWTourViewController *)viewController;
     __block NSMutableArray *dataArr = [NSMutableArray array];
     __block NSMutableArray *allArr = [NSMutableArray array];
@@ -93,6 +94,7 @@
 
 + (void)getMoreData:(NSString *)url ViewController:(UIViewController *)viewController TableView:(UITableView *)tableView DataArr:(NSMutableArray *)dataArr
 {
+    [super getMoreData:url ViewController:viewController TableView:tableView DataArr:dataArr];
     JWTourViewController *tour = (JWTourViewController *)viewController;
     __block NSMutableArray *arr = [NSMutableArray array];
     
@@ -139,9 +141,10 @@
 }
 + (void)selectedCellTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath ViewController:(UIViewController *)viewController Link:(NSString *)link
 {
-
+    [super selectedCellTableView:tableView IndexPath:indexPath ViewController:viewController Link:link];
     JWWebViewController *web = [[JWWebViewController alloc] init];
     web.url = link;
     [viewController.navigationController pushViewController:web animated:YES];
 }
+
 @end

@@ -73,7 +73,7 @@
         viewController.hidesBottomBarWhenPushed = NO;
         
         // 定义leftBarButtonItem
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(back) image:@"xiangzuobai" highImage:@"xiangzuobai"];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(back) image:@"fanhui" highImage:@"fanhui"];
         
 //        // 定义rightBarButtonItem
 //        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(share) image:@"fenxianghui" highImage:@"fenxianghui"];

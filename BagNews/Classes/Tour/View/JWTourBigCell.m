@@ -34,7 +34,7 @@
     _model = model;
     [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.cover_image] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.labeltitle.text = model.name;
-    self.labelDate.text = [model.first_day stringByAppendingString:[NSString stringWithFormat:@"   %ld天",model.day_count]];
+    self.labelDate.text = [model.first_day stringByAppendingString:[NSString stringWithFormat:@"   %ld天",(long)model.day_count]];
     self.labelLocation.text = model.popular_place_str;
     self.imgUser.layer.cornerRadius = 18;
     self.imgUser.layer.masksToBounds = YES;
