@@ -22,8 +22,6 @@
 {
     _model = model;
     CGRect frame = self.lableTitle.frame;
-    frame.size.height = [model.title boundingRectWithSize:CGSizeMake(frame.size.width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10]} context:nil].size.height;
-    self.lableTitle.frame = frame;
     [self.imgCover sd_setImageWithURL:[NSURL URLWithString:model.pic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
 
     self.lableTitle.text = model.title;
