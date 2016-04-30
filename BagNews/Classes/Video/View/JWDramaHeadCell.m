@@ -21,7 +21,7 @@
 - (void)setModel:(JWDaramHeadModel *)model
 {
     _model = model;
-    CGRect frame = self.lableTitle.frame;
+    
     [self.imgCover sd_setImageWithURL:[NSURL URLWithString:model.pic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
 
     self.lableTitle.text = model.title;
