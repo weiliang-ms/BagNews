@@ -248,5 +248,5 @@
 
 - (void)deleteData:(FMDatabase *)db from:(NSString *)tableName Dic:(NSDictionary *)dic;
 -(BOOL)isOpenDatabese:(FMDatabase *)db;
-- (BOOL)open;
+//- (BOOL)open;
 @end

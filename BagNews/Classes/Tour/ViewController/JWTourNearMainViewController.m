@@ -125,8 +125,8 @@
 - (void)setCoordinate:(CLLocationCoordinate2D)coordinate
 {
     _coordinate = coordinate;
-    double latitude = coordinate.latitude;// 纬度
-    double longitude = coordinate.longitude;// 经度
+//    double latitude = coordinate.latitude;// 纬度
+//    double longitude = coordinate.longitude;// 经度
     [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshLocation" object:nil userInfo:@{@"latitude":@"latitude",@"longitude":@"longitude"}];
 }
 #pragma - mark 上随下动同时赋值给上面Scr

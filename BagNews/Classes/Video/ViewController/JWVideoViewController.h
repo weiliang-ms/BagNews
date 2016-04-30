@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JWDramaHeader.h"
 @interface JWVideoViewController : UIViewController
+
+@property(copy,nonatomic)NSArray *models;
+
+@property(copy,nonatomic)NSArray *heads;
+
+@property(copy,nonatomic)NSArray *centers;
+
+@property(nonatomic,strong)JWDramaHeader *header;
+
 
 @end
