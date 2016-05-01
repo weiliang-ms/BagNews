@@ -10,4 +10,5 @@
 @class JWVideoViewController;
 @interface JWDramaVM : NSObject
 + (void)getNewsWithUrl:(NSString *)url CollectionView:(UICollectionView *)collectionView ViewController:(JWVideoViewController *)viewController;
+
 @end

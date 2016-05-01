@@ -18,8 +18,6 @@ NSString *const head = @"http://api.bilibili.com/online_list?_device=android&_hw
 @implementation JWDramaVM
 + (void)getNewsWithUrl:(NSString *)url CollectionView:(UICollectionView *)collectionView ViewController:(JWVideoViewController *)viewController
 {
-    static NSInteger index = 0;
-    if (index == 0){
     __block NSMutableArray *dataArr = [NSMutableArray array];
     [JWNetTool getWithURL:url Parameter:nil Progress:nil Success:^(id result) {
         NSArray *list = [result objectForKey:@"list"];
@@ -36,13 +34,12 @@ NSString *const head = @"http://api.bilibili.com/online_list?_device=android&_hw
             [dataArr addObject:[JWDramaModel objectWithDict:dic]];
         }
         viewController.models = dataArr;
-        [collectionView reloadData];
-        [collectionView.mj_header endRefreshing];
-    } HttpHeader:nil ResponseType:ResponseTypeJSON];}
-    else{
-                [self getHeadDataWithUrl:head CollectionView:collectionView ViewController:viewController];
-    }
+        [self getHeadDataWithUrl:head CollectionView:collectionView ViewController:viewController];
+    } HttpHeader:nil ResponseType:ResponseTypeJSON];
 }
+
+
+
 
 + (void)getHeadDataWithUrl:(NSString *)url CollectionView:(UICollectionView *)collectionView ViewController:(JWVideoViewController *)viewController
 {
@@ -56,7 +53,9 @@ NSString *const head = @"http://api.bilibili.com/online_list?_device=android&_hw
             NSString *key = [NSString stringWithFormat:@"%zd",i];
             [ dataArr addObject:[JWDaramHeadModel objectWithDict:[list objectForKey:key]]];
         }
+        
         viewController.header.arr = dataArr;
+
         [viewController.header.collectionView reloadData];
         [collectionView reloadData];
         [collectionView.mj_header endRefreshing];

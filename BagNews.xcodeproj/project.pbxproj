@@ -73,6 +73,10 @@
 		C06C99291CD4EA4D00342DBC /* JWDramaHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C99271CD4EA4C00342DBC /* JWDramaHeadCell.m */; };
 		C06C992A1CD4EA4D00342DBC /* JWDramaHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06C99281CD4EA4C00342DBC /* JWDramaHeadCell.xib */; };
 		C09060821CBE70950024211E /* JWTourViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C09060811CBE70950024211E /* JWTourViewModel.m */; };
+		C0C92ED31CD60214008C69E3 /* JWAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92ED21CD60214008C69E3 /* JWAVPlayerViewController.m */; };
+		C0C92ED71CD60D17008C69E3 /* JWDaramDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92ED51CD60D17008C69E3 /* JWDaramDetailViewController.m */; };
+		C0C92ED81CD60D17008C69E3 /* JWDaramDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C92ED61CD60D17008C69E3 /* JWDaramDetailViewController.xib */; };
+		C0C92EDB1CD64210008C69E3 /* JWDramaBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92EDA1CD64210008C69E3 /* JWDramaBar.m */; };
 		C0D8C6551CCC0CEE00189E4B /* JWNewsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D8C6541CCC0CEE00189E4B /* JWNewsDB.m */; };
 		C0D8C6571CCCA98C00189E4B /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D8C6561CCCA98C00189E4B /* delete.png */; };
 		C0D8C65B1CCCD70500189E4B /* JWTableViewCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D8C65A1CCCD70500189E4B /* JWTableViewCellClass.m */; };
@@ -208,6 +212,13 @@
 		C06C99281CD4EA4C00342DBC /* JWDramaHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWDramaHeadCell.xib; sourceTree = "<group>"; };
 		C09060801CBE70950024211E /* JWTourViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTourViewModel.h; sourceTree = "<group>"; };
 		C09060811CBE70950024211E /* JWTourViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTourViewModel.m; sourceTree = "<group>"; };
+		C0C92ED11CD60214008C69E3 /* JWAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAVPlayerViewController.h; sourceTree = "<group>"; };
+		C0C92ED21CD60214008C69E3 /* JWAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAVPlayerViewController.m; sourceTree = "<group>"; };
+		C0C92ED41CD60D17008C69E3 /* JWDaramDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDaramDetailViewController.h; sourceTree = "<group>"; };
+		C0C92ED51CD60D17008C69E3 /* JWDaramDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDaramDetailViewController.m; sourceTree = "<group>"; };
+		C0C92ED61CD60D17008C69E3 /* JWDaramDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWDaramDetailViewController.xib; sourceTree = "<group>"; };
+		C0C92ED91CD64210008C69E3 /* JWDramaBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDramaBar.h; sourceTree = "<group>"; };
+		C0C92EDA1CD64210008C69E3 /* JWDramaBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDramaBar.m; sourceTree = "<group>"; };
 		C0D8C6531CCC0CEE00189E4B /* JWNewsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWNewsDB.h; sourceTree = "<group>"; };
 		C0D8C6541CCC0CEE00189E4B /* JWNewsDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWNewsDB.m; sourceTree = "<group>"; };
 		C0D8C6561CCCA98C00189E4B /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
@@ -309,6 +320,8 @@
 				C06C99261CD4EA4C00342DBC /* JWDramaHeadCell.h */,
 				C06C99271CD4EA4C00342DBC /* JWDramaHeadCell.m */,
 				C06C99281CD4EA4C00342DBC /* JWDramaHeadCell.xib */,
+				C0C92ED91CD64210008C69E3 /* JWDramaBar.h */,
+				C0C92EDA1CD64210008C69E3 /* JWDramaBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +331,9 @@
 			children = (
 				C00CB4F91CD3CA1500C70593 /* JWVideoViewController.h */,
 				C00CB4FA1CD3CA1500C70593 /* JWVideoViewController.m */,
+				C0C92ED41CD60D17008C69E3 /* JWDaramDetailViewController.h */,
+				C0C92ED51CD60D17008C69E3 /* JWDaramDetailViewController.m */,
+				C0C92ED61CD60D17008C69E3 /* JWDaramDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -447,6 +463,7 @@
 		C01236371CBE585600AAA15C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C0C92ED01CD601FC008C69E3 /* AVPlayer */,
 				C0311F4F1CD22C5C00F2BAA4 /* Map+NSLog */,
 				C0444AFC1CC9FAD40003107F /* FMDB封装 */,
 				C09060831CBE74140024211E /* CarouselFigure */,
@@ -679,6 +696,15 @@
 			path = CarouselFigure;
 			sourceTree = "<group>";
 		};
+		C0C92ED01CD601FC008C69E3 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92ED11CD60214008C69E3 /* JWAVPlayerViewController.h */,
+				C0C92ED21CD60214008C69E3 /* JWAVPlayerViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		C0D8C6581CCCD6E400189E4B /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -759,6 +785,7 @@
 				C05603651CCBD55500413A4B /* xiangshang.png in Resources */,
 				C06C98FF1CD4A23000342DBC /* JWDramaTableViewCell.xib in Resources */,
 				C0311F3F1CD1F2F500F2BAA4 /* xiangshangsuoyi.png in Resources */,
+				C0C92ED81CD60D17008C69E3 /* JWDaramDetailViewController.xib in Resources */,
 				C0D8C6761CCCEB9100189E4B /* JWNewsThreeImagesCell.xib in Resources */,
 				C0D8C6571CCCA98C00189E4B /* delete.png in Resources */,
 				C0311F431CD1FBE200F2BAA4 /* longing.png in Resources */,
@@ -833,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C92ED71CD60D17008C69E3 /* JWDaramDetailViewController.m in Sources */,
 				C0311F621CD265DF00F2BAA4 /* JWTourNearModel.m in Sources */,
 				C0311F581CD22C5C00F2BAA4 /* NSArray+Log.m in Sources */,
 				C06C99291CD4EA4D00342DBC /* JWDramaHeadCell.m in Sources */,
@@ -880,7 +908,9 @@
 				C05603681CCBDA3800413A4B /* JWBar.m in Sources */,
 				C09060821CBE70950024211E /* JWTourViewModel.m in Sources */,
 				C0D8C6671CCCE3A500189E4B /* JWNewsViewModel.m in Sources */,
+				C0C92ED31CD60214008C69E3 /* JWAVPlayerViewController.m in Sources */,
 				C01236721CBE5AE600AAA15C /* UIBarButtonItem+Extension.m in Sources */,
+				C0C92EDB1CD64210008C69E3 /* JWDramaBar.m in Sources */,
 				C0D8C6751CCCEB9100189E4B /* JWNewsThreeImagesCell.m in Sources */,
 				C0311F461CD2096800F2BAA4 /* JWTourNearMainViewController.m in Sources */,
 				C0311F6B1CD26A2400F2BAA4 /* JWTourNearTableViewCell.m in Sources */,

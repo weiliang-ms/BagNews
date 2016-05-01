@@ -52,7 +52,7 @@
     [self.shopAttr removeAllObjects];
     
     for (NSInteger i = 0; i < self.colNum; i++) {
-        self.shopDictM[[NSString stringWithFormat:@"%zd", i]] = @(self.sectionInset.top + 400);
+        self.shopDictM[[NSString stringWithFormat:@"%zd", i]] = @(self.sectionInset.top + 320);
     }
     
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
@@ -65,15 +65,11 @@
     
     NSIndexPath* headIndex = [NSIndexPath indexPathForItem:0 inSection:0];
     UICollectionViewLayoutAttributes* attrHead = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:headIndex];
-    attrHead.frame = CGRectMake(0, 0, self.collectionView.bounds.size.width, 400);
+    attrHead.frame = CGRectMake(0, 0, self.collectionView.bounds.size.width, 320);
     
     [self.shopAttr addObject:attrHead];
     
-    //    NSIndexPath *sectionOneIndex = [NSIndexPath indexPathForItem:1 inSection:0];
-    //    UICollectionViewLayoutAttributes *attrSec = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:sectionOneIndex];
-    //    attrHead.frame = CGRectMake(0, 194, self.collectionView.bounds.size.width, 40);
-    //
-    //    [self.shopAttr addObject:attrSec];
+
 }
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForItemAtIndexPath:(NSIndexPath*)indexPath

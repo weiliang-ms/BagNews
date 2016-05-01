@@ -12,6 +12,7 @@
 #import "JWDramaVM.h"
 #import "JWDramaModel.h"
 #import "JWDramaHeader.h"
+#import "JWDaramDetailViewController.h"
 static NSString *const url = @"http://app.bilibili.com/bangumi/timeline_v2";
 @interface JWVideoViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,JWShopFlowLayoutDelegate>
 
@@ -22,7 +23,20 @@ static NSString *const url = @"http://app.bilibili.com/bangumi/timeline_v2";
 @end
 
 @implementation JWVideoViewController
-
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushNextViewController:) name:@"DaramHeadViewCellClick" object:nil];
+        
+    }
+    return self;
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -104,5 +118,11 @@ static NSString *const url = @"http://app.bilibili.com/bangumi/timeline_v2";
     }
     
     return reusableView;
+}
+- (void)pushNextViewController:(NSNotification *)noti
+{
+    JWDaramDetailViewController *vc = [[JWDaramDetailViewController alloc] init];
+    vc.model = noti.object;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

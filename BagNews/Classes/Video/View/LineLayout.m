@@ -41,7 +41,7 @@
 {
     // 拿到装有父类所有属性的数组
     NSArray *atts = [super layoutAttributesForElementsInRect:rect];
-    
+    NSArray *attrArr = [[NSArray alloc] initWithArray:atts copyItems:YES];
     CGFloat centerX = self.collectionView.frame.size.width*0.5 + self.collectionView.contentOffset.x;
     
     // 可见范围内进行等比例缩放
@@ -49,7 +49,7 @@
     visRect.size = self.collectionView.frame.size;
     visRect.origin = self.collectionView.contentOffset;
     
-    for (UICollectionViewLayoutAttributes *temp in atts) {
+    for (UICollectionViewLayoutAttributes *temp in attrArr) {
 //        NSLog(@"begin")
         // 判断可见矩形 与item对象矩形是否相交
         if (!CGRectIntersectsRect(visRect, temp.frame))
@@ -58,6 +58,6 @@
         temp.transform3D = CATransform3DMakeScale(scale, scale, 0);
 //        NSLog(@"end");
     }
-    return atts;
+    return attrArr;
 }
 @end
