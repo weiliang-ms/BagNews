@@ -9,7 +9,7 @@
 #import "JWDaramDetailViewController.h"
 #import "JWDramaBar.h"
 #import "JWDaramHeadModel.h"
-
+#import "JWDramaDetailChild.h"
 @interface JWDaramDetailViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imgCover;
 @property (weak, nonatomic) IBOutlet UIButton *upName;
@@ -25,6 +25,7 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
 }
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,7 +44,7 @@
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self addChildViewController:[[JWDramaDetailChild alloc] init]];
     [self.view addSubview:self.dramaBar];
     [self.view addSubview:self.mainScr];
     [self setDataWithModel];
@@ -54,7 +55,7 @@
 {
     [self.imgCover sd_setImageWithURL:[NSURL URLWithString:self.model.pic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.dramatitle.text = self.model.title;
-    [self.upName setTitle:self.model.author forState:0];
+    [self.upName setTitle:[NSString stringWithFormat:@"UP主:%@",self.model.author] forState:0];
     NSString *playCount = self.model.play > 10000 ? [NSString stringWithFormat:@"%0.2f次播放",(double)self.model.play / 10000]:[NSString stringWithFormat:@"%ld次播放",self.model.play ];
     NSString *commentCount = self.model.video_review > 10000 ? [NSString stringWithFormat:@"%0.2f条弹幕",(double)self.model.video_review / 10000]:[NSString stringWithFormat:@"%ld条弹幕",self.model.video_review];
     self.dramaInfo.text = [playCount stringByAppendingString:[NSString stringWithFormat:@"\t\t%@",commentCount]];
@@ -84,12 +85,16 @@
 - (UIScrollView *)mainScr
 {
     if (!_mainScr) {
-        _mainScr = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.dramaBar.frame), SCREENWIDTH, SCREENHEIGHT - 336)];
+        _mainScr = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.dramaBar.frame), SCREENWIDTH, SCREENHEIGHT - 306)];
         _mainScr.backgroundColor = [UIColor redColor];
         _mainScr.delegate = self;
         _mainScr.bounces = NO;
         _mainScr.pagingEnabled = YES;
         _mainScr.contentSize = CGSizeMake(SCREENWIDTH * 3, 0);
+        JWDramaDetailChild *vc = [self.childViewControllers firstObject];
+        vc.model = self.model;
+        vc.view.frame = CGRectMake(0, 0, _mainScr.width * 3, _mainScr.height);
+        [_mainScr addSubview:vc.view];
     }
     
     
@@ -105,4 +110,5 @@
      NSUInteger tagNum = (scrollView.contentOffset.x + [UIScreen mainScreen].bounds.size.width * 0.5) / [UIScreen mainScreen].bounds.size.width + 1;
     [self.dramaBar changeColor:tagNum];
 }
+
 @end

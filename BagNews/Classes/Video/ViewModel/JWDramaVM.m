@@ -51,7 +51,10 @@ NSString *const head = @"http://api.bilibili.com/online_list?_device=android&_hw
 //        }
         for (int i = 0; i < list.allKeys.count; i++) {
             NSString *key = [NSString stringWithFormat:@"%zd",i];
-            [ dataArr addObject:[JWDaramHeadModel objectWithDict:[list objectForKey:key]]];
+            NSDictionary*dict = [list objectForKey: key];
+            JWDaramHeadModel *model = [JWDaramHeadModel objectWithDict:dict];
+            model.descriptions = dict[@"description"];
+            [ dataArr addObject:model];
         }
         
         viewController.header.arr = dataArr;
@@ -63,14 +66,22 @@ NSString *const head = @"http://api.bilibili.com/online_list?_device=android&_hw
         
     } Failure:^(id result) {
         
-        NSArray *list = [result objectForKey:@"list"];
-        for (NSDictionary *dic in list) {
-            [dataArr addObject:[JWDaramHeadModel objectWithDict:dic]];
+        NSDictionary *list = [result objectForKey:@"list"];
+        for (int i = 0; i < list.allKeys.count; i++) {
+            NSString *key = [NSString stringWithFormat:@"%zd",i];
+            NSDictionary*dict = [list objectForKey: key];
+            JWDaramHeadModel *model = [JWDaramHeadModel objectWithDict:dict];
+            model.descriptions = dict[@"description"];
+            [ dataArr addObject:model];
         }
+        
         viewController.header.arr = dataArr;
-        [collectionView reloadData];
+        
         [viewController.header.collectionView reloadData];
+        [collectionView reloadData];
         [collectionView.mj_header endRefreshing];
+        
+        
     } HttpHeader:nil ResponseType:ResponseTypeJSON];
 }
 

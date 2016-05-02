@@ -50,10 +50,11 @@
                         <action selector="upName:" destination="-1" eventType="touchUpInside" id="fAd-wP-o69"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-S4-fBG">
-                    <rect key="frame" x="15" y="155" width="306" height="16"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-S4-fBG">
+                    <rect key="frame" x="172" y="107" width="234" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="306" id="hjd-Fg-d9T"/>
+                        <constraint firstAttribute="height" constant="38" id="BqO-0Z-0ba"/>
+                        <constraint firstAttribute="width" constant="234" id="hjd-Fg-d9T"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -62,18 +63,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="cEE-S4-fBG" firstAttribute="leading" secondItem="cZR-LD-iVG" secondAttribute="trailing" constant="3" id="2IX-oJ-alG"/>
                 <constraint firstItem="cZR-LD-iVG" firstAttribute="top" secondItem="dzf-Bi-o1D" secondAttribute="bottom" constant="1" id="78u-xc-fWz"/>
                 <constraint firstItem="dzf-Bi-o1D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="8jn-C7-BGN"/>
+                <constraint firstAttribute="trailing" secondItem="cEE-S4-fBG" secondAttribute="trailing" constant="8" id="9Yn-dI-m9z"/>
                 <constraint firstItem="cZR-LD-iVG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="GHH-C1-rQ2"/>
                 <constraint firstItem="dzf-Bi-o1D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Nop-fQ-IhQ"/>
                 <constraint firstItem="IVt-id-SAa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="Qqf-3M-vlD"/>
                 <constraint firstAttribute="trailing" secondItem="IVt-id-SAa" secondAttribute="trailing" constant="8" id="Sgy-g1-WfA"/>
-                <constraint firstItem="cEE-S4-fBG" firstAttribute="top" secondItem="cZR-LD-iVG" secondAttribute="bottom" constant="8" id="Tmv-QN-Mkz"/>
-                <constraint firstItem="cEE-S4-fBG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ciR-Cj-F8b"/>
+                <constraint firstItem="cEE-S4-fBG" firstAttribute="top" secondItem="cZR-LD-iVG" secondAttribute="bottom" constant="-40" id="Tmv-QN-Mkz"/>
+                <constraint firstItem="cEE-S4-fBG" firstAttribute="top" secondItem="IVt-id-SAa" secondAttribute="bottom" constant="17" id="cdI-jf-969"/>
+                <constraint firstItem="cEE-S4-fBG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="172" id="ciR-Cj-F8b"/>
                 <constraint firstItem="IVt-id-SAa" firstAttribute="leading" secondItem="dzf-Bi-o1D" secondAttribute="trailing" constant="8" id="elP-KA-BdC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="334" y="240"/>
+            <point key="canvasLocation" x="202" y="245"/>
         </view>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hHX-WT-RuY">
             <rect key="frame" x="0.0" y="0.0" width="22" height="21"/>

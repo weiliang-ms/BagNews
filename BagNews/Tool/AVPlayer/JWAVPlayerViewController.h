@@ -12,6 +12,6 @@
 
 @property(copy,nonatomic)NSString *url; // 视频网址
 
-@property(copy,nonatomic)void(^finishBlock)();
+@property(copy,nonatomic)void(^playFinished)();
 
 @end

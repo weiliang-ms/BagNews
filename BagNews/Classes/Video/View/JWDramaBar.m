@@ -23,7 +23,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = RGBColor(247, 186, 39);
+        self.backgroundColor = [UIColor orangeColor];
         self.itemW = 90 * 3;
         self.rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(2*90, 0, 90, 43)];
         self.rightBtn.tag = 1003;
@@ -41,8 +41,8 @@
         [self.centerBtn setTitle:@"相关视频" forState:0];
         [self.centerBtn setTitleColor:[UIColor blackColor] forState:0];
         [self.rightBtn setTitleColor:[UIColor blackColor] forState:0];
-        self.scrLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 43, 90, 5)];
-        self.scrLable.backgroundColor = [UIColor redColor];
+        self.scrLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 45, 90, 3)];
+        self.scrLable.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.scrLable];
 
 //        self.arr = @[self.leftBtn,self.rightBtn,self.centerBtn];
@@ -70,7 +70,7 @@
         [(UIButton *)[self viewWithTag:self.currentItem+1000] setTitleColor:[UIColor blackColor] forState:0];
         
     }
-[(UIButton *)[self viewWithTag:index+1000] setTitleColor:[UIColor redColor] forState:0];
+[(UIButton *)[self viewWithTag:index+1000] setTitleColor:[UIColor whiteColor] forState:0];
     self.currentItem = index;
 }
 
