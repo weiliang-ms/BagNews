@@ -8,6 +8,7 @@
 
 #import "JWWebViewController.h"
 #import <WebKit/WebKit.h>
+
 @interface JWWebViewController ()
 
 @end
@@ -18,6 +19,7 @@
 {
     [super viewWillAppear:animated];
     self.tabBarController.tabBar.hidden = YES;
+    
 }
 
 - (void)viewDidLoad {

@@ -30,7 +30,7 @@
 - (void)setCellWithModel:(JWNewsModel *)model
 {
     NSDictionary *dic = model.pics;
-    self.lableComment.text = [NSString stringWithFormat:@"%ld评论",model.comment];
+    self.lableComment.text = [NSString stringWithFormat:@"%ld评论",(long)model.comment];
     self.lableTitle.text = model.title;
     NSArray *pics = [dic objectForKey:@"list"];
     if (pics.count > 2) {

@@ -12,6 +12,8 @@
 
 @property(copy,nonatomic)NSString *url; // 视频网址
 
+@property (nonatomic, copy) NSString* danmaku;
+
 @property(copy,nonatomic)void(^playFinished)();
 
 @end

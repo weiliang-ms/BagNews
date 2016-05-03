@@ -7,8 +7,11 @@
 //
 
 #import "JWViewModel.h"
+@class JWDramaDetailChild;
 @interface JWDramaChirldVM : NSObject
 
 + (void)getVideoInfo:(NSString *)url
             CallBack:(void(^)(NSArray *arr))callBack;
++ (void)getDramaCommentsData:(NSString *)url TableView:(UITableView *)tableView ViewController:(JWDramaDetailChild *)viewController;
++ (void)getMoreDramaCommentsData:(NSString *)url TableView:(UITableView *)tableView ViewController:(JWDramaDetailChild *)viewController;
 @end

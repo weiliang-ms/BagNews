@@ -22,6 +22,7 @@
 // RGB颜色
 #define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define ALLCOLOR [UIColor colorWithRed:171/255.0 green:171/255.0 blue:171/255.0 alpha:0.3]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)(((rgbValue)&0xFF0000) >> 16)) / 255.0 green:((float)(((rgbValue)&0xFF00) >> 8)) / 255.0 blue:((float)((rgbValue)&0xFF)) / 255.0 alpha:1.0]
 // 随机色
 #define RandomColor RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 

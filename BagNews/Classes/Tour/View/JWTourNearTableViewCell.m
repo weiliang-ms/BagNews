@@ -31,7 +31,7 @@
     _model = model;
     [self.imgMain sd_setImageWithURL:[NSURL URLWithString:model.cover] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.labelTitle.text = model.name;
-    self.labelDistance.text = [NSString stringWithFormat:@"距我%.2fkm / %ld人去过",model.distance * 100,model.visited_count];
+    self.labelDistance.text = [NSString stringWithFormat:@"距我%.2fkm / %ld人去过",model.distance * 100,(long)model.visited_count];
     self.labelDescription.text = model.address;
 }
 

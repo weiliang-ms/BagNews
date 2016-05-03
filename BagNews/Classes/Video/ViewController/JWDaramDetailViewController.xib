@@ -33,11 +33,12 @@
                         <constraint firstAttribute="height" constant="67" id="LHE-Xn-ECd"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-LD-iVG">
                     <rect key="frame" x="15" y="124" width="154" height="23"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="154" id="XgV-dE-ILH"/>
                         <constraint firstAttribute="height" constant="23" id="naP-1c-fOt"/>
@@ -57,7 +58,7 @@
                         <constraint firstAttribute="width" constant="234" id="hjd-Fg-d9T"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -83,7 +84,7 @@
             <rect key="frame" x="0.0" y="0.0" width="22" height="21"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="highlightedColor"/>
             <point key="canvasLocation" x="60" y="109.5"/>
         </label>

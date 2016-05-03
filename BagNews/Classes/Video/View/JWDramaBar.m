@@ -32,7 +32,7 @@
         
         self.leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 90, 43)];
         [self addSubview:self.leftBtn];
-        [self.leftBtn setTitleColor:[UIColor redColor] forState:0];
+        [self.leftBtn setTitleColor:[UIColor whiteColor] forState:0];
         [self.leftBtn setTitle:@"番剧相关" forState:0];
         
         self.centerBtn = [[UIButton alloc] initWithFrame:CGRectMake(90, 0, 90, 43)];

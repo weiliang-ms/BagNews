@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 @class JWDaramHeadModel;
 @interface JWDramaDetailChild : UIViewController
+
 @property(nonatomic,strong)JWDaramHeadModel *model;
+
+@property(copy,nonatomic)NSArray *comments;// 评论数据数组
 
 @end

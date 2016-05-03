@@ -214,7 +214,7 @@
     
     newsVC.view.frame = self.mainScr.bounds;
     [self.mainScr addSubview:newsVC.view];
-    NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%ld",index] forKey:@"index"];
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%ld",(long)index] forKey:@"index"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"mainScrContentOffset" object:nil userInfo:dic];
 //    [newsVC.tableView.mj_header beginRefreshing];
     self.titleView.currentItem = index ;

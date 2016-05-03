@@ -11,4 +11,9 @@
 @interface NSObject (JSONExtension)
 + (instancetype)objectWithDict:(NSDictionary *)dict;
 - (NSString *)arrayObjectClass;
+// 归档反归档
+- (NSArray *)ignoredNames;
+- (void)xzx_encode:(NSCoder *)aCoder;
+- (void)xzx_decode:(NSCoder *)aDecoder;
+
 @end

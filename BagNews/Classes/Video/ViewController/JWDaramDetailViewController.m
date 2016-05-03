@@ -37,11 +37,6 @@
     
     return self;
 }
-//-(void)loadView
-//{
-//    [super loadView];
-//
-//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addChildViewController:[[JWDramaDetailChild alloc] init]];
@@ -56,8 +51,8 @@
     [self.imgCover sd_setImageWithURL:[NSURL URLWithString:self.model.pic] placeholderImage:[UIImage imageNamed:@"smallPlayHolder"]];
     self.dramatitle.text = self.model.title;
     [self.upName setTitle:[NSString stringWithFormat:@"UP主:%@",self.model.author] forState:0];
-    NSString *playCount = self.model.play > 10000 ? [NSString stringWithFormat:@"%0.2f次播放",(double)self.model.play / 10000]:[NSString stringWithFormat:@"%ld次播放",self.model.play ];
-    NSString *commentCount = self.model.video_review > 10000 ? [NSString stringWithFormat:@"%0.2f条弹幕",(double)self.model.video_review / 10000]:[NSString stringWithFormat:@"%ld条弹幕",self.model.video_review];
+    NSString *playCount = self.model.play > 10000 ? [NSString stringWithFormat:@"%0.2f次播放",(double)self.model.play / 10000]:[NSString stringWithFormat:@"%ld次播放",(long)self.model.play ];
+    NSString *commentCount = self.model.video_review > 10000 ? [NSString stringWithFormat:@"%0.2f条弹幕",(double)self.model.video_review / 10000]:[NSString stringWithFormat:@"%ld条弹幕",(long)self.model.video_review];
     self.dramaInfo.text = [playCount stringByAppendingString:[NSString stringWithFormat:@"\t\t%@",commentCount]];
     
 }

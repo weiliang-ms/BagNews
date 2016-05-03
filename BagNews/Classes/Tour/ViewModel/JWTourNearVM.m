@@ -56,7 +56,7 @@
     [arr addObjectsFromArray:dataArr];
     static NSInteger index = 0;
     index+=20;
-    NSLog(@"%ld",index);
+    NSLog(@"%ld",(long)index);
     NSString *temp = [NSString stringWithFormat:url,index];
     [JWNetTool getWithURL:temp Parameter:nil Progress:nil Success:^(id result) {
         NSArray *items = [result objectForKey:@"items"];
