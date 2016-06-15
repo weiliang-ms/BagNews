@@ -8,6 +8,6 @@
 
 #import "JWBaseViewController.h"
 
-@interface JWMineViewController : JWBaseViewController
+@interface JWMineViewController : UITableViewController
 
 @end

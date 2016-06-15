@@ -12,9 +12,13 @@
 #import "JWVideoViewController.h"
 #import "JWMineViewController.h"
 #import "JWNavigationController.h"
+#import "JWLeftListTableViewController.h"
+#import <MMDrawerController.h>
 @interface MainViewController ()
 //@property(retain,nonatomic)UIImageView *img;
+@property(nonatomic,strong)MMDrawerController *listenDrawer;
 
+@property(nonatomic,strong)MMDrawerController *locationDrawer;
 @end
 
 @implementation MainViewController
@@ -34,6 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,9 +46,11 @@
     //    self.img.hidden = YES;
     // 添加子控制器
     [self addChildVc:[[JWNewsViewController alloc] init] title:@"新闻" image:@"xinwenputong.png" selectedImage:@"xinwenxuanzhong.png"];
-    [self addChildVc:[[JWTourViewController alloc] init] title:@"旅行" image:@"iconfont-erciyuan-2" selectedImage:@"iconfont-erciyuan-2"];
-    [self addChildVc:[[JWVideoViewController alloc] init] title:@"视频" image:@"iconfont-dibushiting" selectedImage:@"iconfont-dibushiting-2"];
-    [self addChildVc:[[JWMineViewController alloc] init] title:@"我的" image:@"iconfont-duanzi" selectedImage:@"iconfont-duanzi-2"];
+    [self addChildVc:[[JWTourViewController alloc] init] title:@"旅行" image:@"lvxing" selectedImage:@"lvxinghuang"];
+    [self addChildVc:[[JWVideoViewController alloc] init] title:@"视频" image:@"shipin" selectedImage:@"shipinhuangse"];
+    JWMineViewController *listenVC = [[JWMineViewController alloc]init];
+
+    [self addChildVc:listenVC title:@"听闻" image:@"talk" selectedImage:@"talkhuang"];
   
 }
 

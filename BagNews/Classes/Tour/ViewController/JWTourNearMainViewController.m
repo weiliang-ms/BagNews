@@ -85,7 +85,7 @@
         JWTourNearViewController *viewController = [self.childViewControllers firstObject];
         viewController.url = [self.urls firstObject];
         viewController.view.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT - 108);
-        viewController.view.backgroundColor = [UIColor orangeColor];
+//        viewController.view.backgroundColor = [UIColor orangeColor];
         [_mainScr addSubview:viewController.view];
 
     }
@@ -141,7 +141,7 @@
     {
         viewController.view.frame = CGRectMake(index * SCREENWIDTH, 0, SCREENWIDTH, SCREENHEIGHT - 138);
         viewController.url = [self.urls objectAtIndex:index];
-        viewController.view.backgroundColor = [UIColor orangeColor];
+//        viewController.view.backgroundColor = [UIColor orangeColor];
         [self.mainScr addSubview:viewController.view];
     }
     self.topView.index = index;

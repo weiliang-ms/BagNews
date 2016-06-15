@@ -57,6 +57,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationBar.barTintColor = [UIColor redColor];
     // Do any additional setup after loading the view.
     
 }
@@ -73,7 +74,7 @@
         viewController.hidesBottomBarWhenPushed = NO;
         
         // 定义leftBarButtonItem
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(back) image:@"fanhui" highImage:@"fanhui"];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(back) image:@"fanhuijiantou" highImage:@"fanhuijiantou"];
         
 //        // 定义rightBarButtonItem
 //        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(share) image:@"fenxianghui" highImage:@"fenxianghui"];

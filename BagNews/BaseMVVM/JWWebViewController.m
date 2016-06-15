@@ -30,16 +30,7 @@
     [web loadRequest:request];
 
 }
-//- (void)webViewDidFinishLoad:(UIWebView *)webView
-//{
-//    
-//    NSString * htmlResponseStr=[NSString stringWithContentsOfURL:[NSURL URLWithString:self.url] encoding:NSUTF8StringEncoding error:Nil];
-//    NSString *resourcePath = [ [NSBundle mainBundle] resourcePath];
-//    [[NSFileManager defaultManager] createDirectoryAtPath:[resourcePath stringByAppendingString:@"/Caches"] withIntermediateDirectories:YES attributes:nil error:nil];
-//    NSString * path=[resourcePath stringByAppendingString:[NSString stringWithFormat:@"/Caches/%lu.html",(unsigned long)[self.url hash]]];
-//    [htmlResponseStr writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
-//    NSLog(@"----%@",path);
-//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

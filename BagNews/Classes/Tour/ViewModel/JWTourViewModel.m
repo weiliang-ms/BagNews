@@ -141,6 +141,7 @@
 }
 + (void)selectedCellTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath ViewController:(UIViewController *)viewController Link:(NSString *)link
 {
+    
     [super selectedCellTableView:tableView IndexPath:indexPath ViewController:viewController Link:link];
     JWWebViewController *web = [[JWWebViewController alloc] init];
     web.url = link;

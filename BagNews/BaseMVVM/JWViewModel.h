@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "JWNetTool.h"
-
 @interface JWViewModel : NSObject
 /*cell点击方法*/
 + (void)selectedCellTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath ViewController:(UIViewController *)viewController Link:(NSString *)link NS_REQUIRES_SUPER;

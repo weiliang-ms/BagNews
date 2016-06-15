@@ -67,7 +67,7 @@
                 <outlet property="labelDistance" destination="lUV-RT-kXT" id="s0w-jZ-Qj9"/>
                 <outlet property="labelTitle" destination="UXR-RQ-pMI" id="8WL-g4-9vH"/>
             </connections>
-            <point key="canvasLocation" x="131" y="336.5"/>
+            <point key="canvasLocation" x="226" y="321.5"/>
         </tableViewCell>
     </objects>
 </document>

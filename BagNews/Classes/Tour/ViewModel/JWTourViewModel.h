@@ -7,6 +7,5 @@
 //
 
 #import "JWViewModel.h"
-
 @interface JWTourViewModel : JWViewModel
 @end

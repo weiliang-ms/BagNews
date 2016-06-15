@@ -432,14 +432,11 @@
         //当前时长进度progress
         NSInteger proMin = (NSInteger)CMTimeGetSeconds([_player currentTime]) / 60; //当前秒
         NSInteger proSec = (NSInteger)CMTimeGetSeconds([_player currentTime]) % 60; //当前分钟
-        //    NSLog(@"%d",_playerItem.duration.timescale);
-        //    NSLog(@"%lld",_playerItem.duration.value/1000 / 60);
-        
-        //duration 总时长
+                //duration 总时长
         
         NSInteger durMin = (NSInteger)_playerItem.duration.value / _playerItem.duration.timescale / 60; //总秒
         NSInteger durSec = (NSInteger)_playerItem.duration.value / _playerItem.duration.timescale % 60; //总分钟
-        self.currentTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld / %02ld:%02ld", (long)proMin, proSec, durMin, durSec];
+        self.currentTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld / %02ld:%02ld", (long)proMin, (long)proSec, durMin, durSec];
         
         //        if (_danmakuView.isPrepared) {
         //            [_danmakuView start];
